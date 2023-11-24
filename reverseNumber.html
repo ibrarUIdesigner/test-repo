@@ -1,0 +1,23 @@
+<input id="input" type="text" placeholder="please enter a number"><button id="btn">Reverse</button>
+<p id="errorMsg" style="color: red;"></p>
+<strong id="reversed"></strong>
+<script>
+
+    const INPUT = document.getElementById("input");
+    const REVERSE_BTN = document.getElementById("btn");
+    const ERROR_MSG = document.getElementById("errorMsg");
+    const REVERSED_DATA = document.getElementById("reversed");
+
+    REVERSE_BTN.addEventListener("click", reverseNumber)
+
+    function reverseNumber(){
+        
+        if(INPUT.value === "") ERROR_MSG.innerHTML="Please enter a number"
+        else{  ERROR_MSG.innerHTML=""
+       let string =INPUT.value.split("").reverse().join("");
+
+       console.log(string);
+
+       REVERSED_DATA.innerHTML = string;}
+    }
+</script>

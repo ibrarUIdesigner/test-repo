@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        let onePlus = function (digits){
+            const num = BigInt(digits.join(""))+1n
+            const numToString = num.toString();
+
+
+            let arr = [];
+
+            console.log(numToString);
+            console.log(numToString.length);
+
+            for (let index = 0; index < numToString.length; index++) {
+                const num = parseInt(numToString[index]);
+
+                arr.push(num)
+
+
+                
+            }
+            return arr
+        }
+
+       console.log( onePlus([1,2,3]));
+
+    </script>
+    
+</body>
+</html>
